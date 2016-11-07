@@ -1,4 +1,5 @@
-import com.jamesrowlands.roman_numerals.RomanNumeralGeneratorImpl
+package com.jamesrowlands.roman_numerals
+
 import spock.lang.Specification
 
 /**
@@ -290,7 +291,7 @@ class RomanNumeralGeneratorImplSpec extends Specification {
     def "0 converted to Roman Numerals should equal error message"() {
         given:
             def input = 0
-            def expectedOutput = "number to convert must be between 1 and 3999";
+            def expectedOutput = "Number to convert must be between 1 and 3999";
         when:
             def result = romanNumeralGenerator.generateNumeral(input)
 
@@ -302,7 +303,7 @@ class RomanNumeralGeneratorImplSpec extends Specification {
     def "4000 converted to Roman Numerals should equal error message"() {
         given:
             def input = 4000
-            def expectedOutput = "number to convert must be between 1 and 3999";
+            def expectedOutput = "Number to convert must be between 1 and 3999";
         when:
             def result = romanNumeralGenerator.generateNumeral(input)
 
