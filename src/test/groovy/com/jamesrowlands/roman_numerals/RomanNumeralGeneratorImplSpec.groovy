@@ -311,4 +311,259 @@ class RomanNumeralGeneratorImplSpec extends Specification {
             result == expectedOutput
 
     }
+
+    def "Roman Numeral I converted to number 1"() {
+        given:
+            def input = "I"
+            def expectedOutput = 1
+        when:
+            def result = romanNumeralGenerator.convertNumeralToNumber(input)
+
+        then:
+            result == expectedOutput
+    }
+
+    def "Roman Numeral II converted to number 2"() {
+        given:
+            def input = "II"
+            def expectedOutput = 2
+        when:
+            def result = romanNumeralGenerator.convertNumeralToNumber(input)
+
+        then:
+            result == expectedOutput
+    }
+
+    def "Roman Numeral III converted to number 3"() {
+        given:
+            def input = "III"
+            def expectedOutput = 3
+        when:
+            def result = romanNumeralGenerator.convertNumeralToNumber(input)
+
+        then:
+            result == expectedOutput
+    }
+
+    def "Roman Numeral IV converted to number 4"() {
+        given:
+            def input = "IV"
+            def expectedOutput = 4
+        when:
+            def result = romanNumeralGenerator.convertNumeralToNumber(input)
+
+        then:
+            result == expectedOutput
+    }
+
+    def "Roman Numeral V converted to number 5"() {
+        given:
+            def input = "V"
+            def expectedOutput = 5
+        when:
+            def result = romanNumeralGenerator.convertNumeralToNumber(input)
+
+        then:
+            result == expectedOutput
+    }
+
+    def "Roman Numeral VI converted to number 6"() {
+        given:
+            def input = "VI"
+            def expectedOutput = 6
+        when:
+            def result = romanNumeralGenerator.convertNumeralToNumber(input)
+
+        then:
+            result == expectedOutput
+    }
+
+    def "Roman Numeral IX converted to number 9"() {
+        given:
+            def input = "IX"
+            def expectedOutput = 9
+        when:
+            def result = romanNumeralGenerator.convertNumeralToNumber(input)
+
+        then:
+            result == expectedOutput
+    }
+
+    def "Roman Numeral X converted to number 10"() {
+        given:
+            def input = "X"
+            def expectedOutput = 10
+        when:
+            def result = romanNumeralGenerator.convertNumeralToNumber(input)
+
+        then:
+            result == expectedOutput
+    }
+
+    def "Roman Numeral XI converted to number 11"() {
+        given:
+            def input = "XI"
+            def expectedOutput = 11
+        when:
+            def result = romanNumeralGenerator.convertNumeralToNumber(input)
+
+        then:
+            result == expectedOutput
+    }
+
+    def "Roman Numeral XIV converted to number 14"() {
+        given:
+            def input = "XIV"
+            def expectedOutput = 14
+        when:
+            def result = romanNumeralGenerator.convertNumeralToNumber(input)
+
+        then:
+            result == expectedOutput
+    }
+
+    def "Roman Numeral XV converted to number 15"() {
+        given:
+            def input = "XV"
+            def expectedOutput = 15
+        when:
+            def result = romanNumeralGenerator.convertNumeralToNumber(input)
+
+        then:
+            result == expectedOutput
+    }
+
+    def "Roman Numeral XXXIX converted to number 39"() {
+        given:
+            def input = "XXXIX"
+            def expectedOutput = 39
+        when:
+            def result = romanNumeralGenerator.convertNumeralToNumber(input)
+
+        then:
+            result == expectedOutput
+    }
+
+    def "Roman Numeral XL converted to number 40"() {
+        given:
+            def input = "XL"
+            def expectedOutput = 40
+        when:
+            def result = romanNumeralGenerator.convertNumeralToNumber(input)
+
+        then:
+            result == expectedOutput
+    }
+
+    def "Roman Numeral IL converted to number 49"() {
+        given:
+            def input = "IL"
+            def expectedOutput = 49
+        when:
+            def result = romanNumeralGenerator.convertNumeralToNumber(input)
+
+        then:
+            result == expectedOutput
+    }
+
+    def "Roman Numeral L converted to number 50"() {
+        given:
+            def input = "IL"
+            def expectedOutput = 49
+        when:
+            def result = romanNumeralGenerator.convertNumeralToNumber(input)
+
+        then:
+            result == expectedOutput
+    }
+
+    def "Roman Numeral XC converted to number 90"() {
+        given:
+            def input = "XC"
+            def expectedOutput = 90
+        when:
+            def result = romanNumeralGenerator.convertNumeralToNumber(input)
+
+        then:
+            result == expectedOutput
+    }
+
+    def "Roman Numeral C converted to number 100"() {
+        given:
+        def input = "C"
+        def expectedOutput = 100
+        when:
+        def result = romanNumeralGenerator.convertNumeralToNumber(input)
+
+        then:
+        result == expectedOutput
+    }
+
+    def "Roman Numeral CD converted to number 400"() {
+        given:
+            def input = "CD"
+            def expectedOutput = 400
+        when:
+            def result = romanNumeralGenerator.convertNumeralToNumber(input)
+
+        then:
+            result == expectedOutput
+    }
+
+    def "Roman Numeral LD converted to number 450"() {
+        given:
+            def input = "LD"
+            def expectedOutput = 450
+        when:
+            def result = romanNumeralGenerator.convertNumeralToNumber(input)
+
+        then:
+            result == expectedOutput
+    }
+
+    def "Roman Numeral L converted to number 500"() {
+        given:
+            def input = "C"
+            def expectedOutput = 100
+        when:
+            def result = romanNumeralGenerator.convertNumeralToNumber(input)
+
+        then:
+            result == expectedOutput
+    }
+
+    def "Roman Numeral CM converted to number 900"() {
+        given:
+            def input = "CM"
+            def expectedOutput = 900
+        when:
+            def result = romanNumeralGenerator.convertNumeralToNumber(input)
+
+        then:
+            result == expectedOutput
+    }
+
+    def "Roman Numeral M converted to number 1000"() {
+        given:
+            def input = "M"
+            def expectedOutput = 1000
+        when:
+            def result = romanNumeralGenerator.convertNumeralToNumber(input)
+
+        then:
+            result == expectedOutput
+    }
+
+    def "Roman Numeral MMMCMXCIX converted to number 3999"() {
+        given:
+            def input = "MMMCMXCIX"
+            def expectedOutput = 3999
+        when:
+            def result = romanNumeralGenerator.convertNumeralToNumber(input)
+
+        then:
+            result == expectedOutput
+    }
+
+
 }
